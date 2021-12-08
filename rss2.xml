@@ -9,26 +9,27 @@
     <atom:link href="http://example.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>永远积极向上，永远热泪盈眶</description>
-    <pubDate>Wed, 08 Dec 2021 13:54:16 GMT</pubDate>
+    <pubDate>Wed, 08 Dec 2021 14:22:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title></title>
+      <title>面向聋哑人的智能会议系统</title>
       <link>http://example.com/2021/12/08/%E9%9D%A2%E5%90%91%E8%81%8B%E5%93%91%E4%BA%BA%E7%9A%84%E6%99%BA%E8%83%BD%E4%BC%9A%E8%AE%AE%E7%B3%BB%E7%BB%9F/</link>
       <guid>http://example.com/2021/12/08/%E9%9D%A2%E5%90%91%E8%81%8B%E5%93%91%E4%BA%BA%E7%9A%84%E6%99%BA%E8%83%BD%E4%BC%9A%E8%AE%AE%E7%B3%BB%E7%BB%9F/</guid>
-      <pubDate>Wed, 08 Dec 2021 13:59:06 GMT</pubDate>
+      <pubDate>Wed, 08 Dec 2021 14:03:24 GMT</pubDate>
       
         
         
-      <description>&lt;h1 id=&quot;面向聋哑人的智能会议系统&quot;&gt;&lt;a href=&quot;#面向聋哑人的智能会议系统&quot; class=&quot;headerlink&quot; title=&quot;面向聋哑人的智能会议系统&quot;&gt;&lt;/a&gt;面向聋哑人的智能会议系统&lt;/h1&gt;&lt;hr&gt;
-&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景</description>
+      <description>&lt;h2 id=&quot;技术背景&quot;&gt;&lt;a href=&quot;#技术背景&quot; class=&quot;headerlink&quot; title=&quot;技术背景&quot;&gt;&lt;/a&gt;技术背景&lt;/h2&gt;&lt;p&gt;        根据最新资料显示，我国听力语言残疾居视力残疾、肢残、智残等五大残疾之首，为2057 万人，占中国人口总数的1</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="面向聋哑人的智能会议系统"><a href="#面向聋哑人的智能会议系统" class="headerlink" title="面向聋哑人的智能会议系统"></a>面向聋哑人的智能会议系统</h1><hr><h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>        根据最新资料显示，我国听力语言残疾居视力残疾、肢残、智残等五大残疾之首，为2057 万人，占中国人口总数的1.67%，因此，如何帮助他们解决残疾带来的各种问题，让他们融入现代社会，能够像正常人一样学习、工作是社会各界需要考虑的问题。随着社会的发展，越来越多的聋哑人获得了自己的工作，因此在各类大型会议或小型会议中可能经常会有聋哑人士参与，而聋哑人士由于其生理缺陷在参会过程中经常会遇到以下两个方面的问题：</p><h5 id="人员交流"><a href="#人员交流" class="headerlink" title="人员交流"></a>人员交流</h5><p>        在现实生活中，聋哑人的交流一般通过写字或者手语实现的，但是在会议中这两种交流方式都存在问题，首先写字这种方式十分繁琐，会严重降低会议的效率。其次，由于大多数正常人不懂手语的意思，他们在会议中和聋哑人交流就变得十分困难，不利于会议的进行。</p><h5 id="人机交互"><a href="#人机交互" class="headerlink" title="人机交互"></a>人机交互</h5><p>        在设备控制方面，现在大多数设备均可通过语音控制，但聋哑人由于声音缺陷无法像上述一样灵活控制设备，难以高效参与会议。</p><h5 id="目前解决方案及问题"><a href="#目前解决方案及问题" class="headerlink" title="目前解决方案及问题"></a>目前解决方案及问题</h5><p>        当有聋哑人士参会时，目前通常都是通过配备现场手语翻译员，由现场手语翻译员为聋哑人士翻译会议内容，聋哑人士若需要发言，再由现场手语翻译员口述给现场的与会人员，这种方式存在多种问题，如手语翻译员数量不足、翻译成本太高等。另一种参会方式是采用由手语翻译员在现场讲台旁统一进行翻译的方式，可以减少现场手语翻译员的配置，但是该类方式实现较为复杂，聋哑人士存在多种会议参与障碍，如聋哑人士获取会议信息较为困难，处于距离手语翻译员较远或视线较差位置的聋哑人士可能就无法清晰获取手语翻译员的动作，聋哑人士要实现参与讨论也较为困难，必须由聋哑人士走至台前，由近距离的手语翻译员现场进行翻译，使得会议执行不便。</p><h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>（这里仅讨论聋哑人如何在会议中表达信息、人机交互，对于聋哑人获取信息，可以通过语音翻译实现，这里不作赘述）</p><p>        系统首先通过手势数字识别实现功能模式的选择，共有以下5种功能模式：（第一个为解决人员交流问题，后面为解决人机交互问题。对于人机交互问题的方案并不局限于聋哑人，正常人也可以使用以提高会议效率）</p><ol><li><p>手语翻译模式：系统识别手势获取关节点坐标，与手语库对比输出内容</p></li><li><p>鼠标控制模式：控制鼠标实现各种任务</p></li><li><p>批注模式：实现多种颜色写字、批注擦除功能</p></li><li><p>视频控制模式：实现音量调节、视频前进后退功能</p></li></ol><h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><ul><li><p><input checked="" disabled="" type="checkbox">  手部位置及关节点的识别</p></li><li><p><input checked="" disabled="" type="checkbox">  人机交互功能的设计与实现</p></li><li><p><input checked="" disabled="" type="checkbox">  手势识别在树莓派上部署</p></li><li><p><input disabled="" type="checkbox">  系统整体结构的搭建</p></li><li><p><input disabled="" type="checkbox">  制作一个简单的手语库（如26个字母）</p></li></ul>]]></content:encoded>
+      <content:encoded><![CDATA[<h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>        根据最新资料显示，我国听力语言残疾居视力残疾、肢残、智残等五大残疾之首，为2057 万人，占中国人口总数的1.67%，因此，如何帮助他们解决残疾带来的各种问题，让他们融入现代社会，能够像正常人一样学习、工作是社会各界需要考虑的问题。随着社会的发展，越来越多的聋哑人获得了自己的工作，因此在各类大型会议或小型会议中可能经常会有聋哑人士参与，而聋哑人士由于其生理缺陷在参会过程中经常会遇到以下两个方面的问题：</p><h5 id="人员交流"><a href="#人员交流" class="headerlink" title="人员交流"></a>人员交流</h5><p>        在现实生活中，聋哑人的交流一般通过写字或者手语实现的，但是在会议中这两种交流方式都存在问题，首先写字这种方式十分繁琐，会严重降低会议的效率。其次，由于大多数正常人不懂手语的意思，他们在会议中和聋哑人交流就变得十分困难，不利于会议的进行。</p><h5 id="人机交互"><a href="#人机交互" class="headerlink" title="人机交互"></a>人机交互</h5><p>        在设备控制方面，现在大多数设备均可通过语音控制，但聋哑人由于声音缺陷无法像上述一样灵活控制设备，难以高效参与会议。</p><h5 id="目前解决方案及问题"><a href="#目前解决方案及问题" class="headerlink" title="目前解决方案及问题"></a>目前解决方案及问题</h5><p>        当有聋哑人士参会时，目前通常都是通过配备现场手语翻译员，由现场手语翻译员为聋哑人士翻译会议内容，聋哑人士若需要发言，再由现场手语翻译员口述给现场的与会人员，这种方式存在多种问题，如手语翻译员数量不足、翻译成本太高等。另一种参会方式是采用由手语翻译员在现场讲台旁统一进行翻译的方式，可以减少现场手语翻译员的配置，但是该类方式实现较为复杂，聋哑人士存在多种会议参与障碍，如聋哑人士获取会议信息较为困难，处于距离手语翻译员较远或视线较差位置的聋哑人士可能就无法清晰获取手语翻译员的动作，聋哑人士要实现参与讨论也较为困难，必须由聋哑人士走至台前，由近距离的手语翻译员现场进行翻译，使得会议执行不便。</p><h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>（这里仅讨论聋哑人如何在会议中表达信息、人机交互，对于聋哑人获取信息，可以通过语音翻译实现，这里不作赘述）</p><p>        系统首先通过手势数字识别实现功能模式的选择，共有以下5种功能模式：（第一个为解决人员交流问题，后面为解决人机交互问题。对于人机交互问题的方案并不局限于聋哑人，正常人也可以使用以提高会议效率）</p><ol><li><p>手语翻译模式：系统识别手势获取关节点坐标，与手语库对比输出内容</p></li><li><p>鼠标控制模式：控制鼠标实现各种任务</p></li><li><p>批注模式：实现多种颜色写字、批注擦除功能</p></li><li><p>视频控制模式：实现音量调节、视频前进后退功能</p></li></ol><h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><ul><li><p><input checked="" disabled="" type="checkbox">  手部位置及关节点的识别</p></li><li><p><input checked="" disabled="" type="checkbox">  人机交互功能的设计与实现</p></li><li><p><input checked="" disabled="" type="checkbox">  手势识别在树莓派上部署</p></li><li><p><input disabled="" type="checkbox">  系统整体结构的搭建</p></li><li><p><input disabled="" type="checkbox">  制作一个简单的手语库（如26个字母）</p></li></ul><h3 id="欢迎来我GitHub交流"><a href="#欢迎来我GitHub交流" class="headerlink" title="欢迎来我GitHub交流"></a>欢迎来我<a href="https://github.com/szzhh">GitHub</a>交流</h3>]]></content:encoded>
       
       
+      
+      <category domain="http://example.com/tags/%E6%99%BA%E8%83%BD%E4%BA%92%E8%81%94%E5%A4%A7%E8%B5%9B/">智能互联大赛</category>
       
       
       <comments>http://example.com/2021/12/08/%E9%9D%A2%E5%90%91%E8%81%8B%E5%93%91%E4%BA%BA%E7%9A%84%E6%99%BA%E8%83%BD%E4%BC%9A%E8%AE%AE%E7%B3%BB%E7%BB%9F/#disqus_thread</comments>
