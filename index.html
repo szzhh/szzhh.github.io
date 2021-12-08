@@ -197,6 +197,94 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/08/%E9%9D%A2%E5%90%91%E8%81%8B%E5%93%91%E4%BA%BA%E7%9A%84%E6%99%BA%E8%83%BD%E4%BC%9A%E8%AE%AE%E7%B3%BB%E7%BB%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="szh">
+      <meta itemprop="description" content="永远积极向上，永远热泪盈眶">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="暴打熊猫头">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/12/08/%E9%9D%A2%E5%90%91%E8%81%8B%E5%93%91%E4%BA%BA%E7%9A%84%E6%99%BA%E8%83%BD%E4%BC%9A%E8%AE%AE%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+        	
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-12-08 21:59:06 / 修改时间：21:54:16" itemprop="dateCreated datePublished" datetime="2021-12-08T21:59:06+08:00">2021-12-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="面向聋哑人的智能会议系统"><a href="#面向聋哑人的智能会议系统" class="headerlink" title="面向聋哑人的智能会议系统"></a>面向聋哑人的智能会议系统</h1><hr>
+<h2 id="技术背景"><a href="#技术背景" class="headerlink" title="技术背景"></a>技术背景</h2><p>        根据最新资料显示，我国听力语言残疾居视力残疾、肢残、智残等五大残疾之首，为2057 万人，占中国人口总数的1.67%，因此，如何帮助他们解决残疾带来的各种问题，让他们融入现代社会，能够像正常人一样学习、工作是社会各界需要考虑的问题。随着社会的发展，越来越多的聋哑人获得了自己的工作，因此在各类大型会议或小型会议中可能经常会有聋哑人士参与，而聋哑人士由于其生理缺陷在参会过程中经常会遇到以下两个方面的问题：</p>
+<h5 id="人员交流"><a href="#人员交流" class="headerlink" title="人员交流"></a>人员交流</h5><p>        在现实生活中，聋哑人的交流一般通过写字或者手语实现的，但是在会议中这两种交流方式都存在问题，首先写字这种方式十分繁琐，会严重降低会议的效率。其次，由于大多数正常人不懂手语的意思，他们在会议中和聋哑人交流就变得十分困难，不利于会议的进行。</p>
+<h5 id="人机交互"><a href="#人机交互" class="headerlink" title="人机交互"></a>人机交互</h5><p>        在设备控制方面，现在大多数设备均可通过语音控制，但聋哑人由于声音缺陷无法像上述一样灵活控制设备，难以高效参与会议。</p>
+<h5 id="目前解决方案及问题"><a href="#目前解决方案及问题" class="headerlink" title="目前解决方案及问题"></a>目前解决方案及问题</h5><p>        当有聋哑人士参会时，目前通常都是通过配备现场手语翻译员，由现场手语翻译员为聋哑人士翻译会议内容，聋哑人士若需要发言，再由现场手语翻译员口述给现场的与会人员，这种方式存在多种问题，如手语翻译员数量不足、翻译成本太高等。另一种参会方式是采用由手语翻译员在现场讲台旁统一进行翻译的方式，可以减少现场手语翻译员的配置，但是该类方式实现较为复杂，聋哑人士存在多种会议参与障碍，如聋哑人士获取会议信息较为困难，处于距离手语翻译员较远或视线较差位置的聋哑人士可能就无法清晰获取手语翻译员的动作，聋哑人士要实现参与讨论也较为困难，必须由聋哑人士走至台前，由近距离的手语翻译员现场进行翻译，使得会议执行不便。</p>
+<h2 id="系统设计"><a href="#系统设计" class="headerlink" title="系统设计"></a>系统设计</h2><p>（这里仅讨论聋哑人如何在会议中表达信息、人机交互，对于聋哑人获取信息，可以通过语音翻译实现，这里不作赘述）</p>
+<p>        系统首先通过手势数字识别实现功能模式的选择，共有以下5种功能模式：（第一个为解决人员交流问题，后面为解决人机交互问题。对于人机交互问题的方案并不局限于聋哑人，正常人也可以使用以提高会议效率）</p>
+<ol>
+<li><p>手语翻译模式：系统识别手势获取关节点坐标，与手语库对比输出内容</p>
+</li>
+<li><p>鼠标控制模式：控制鼠标实现各种任务</p>
+</li>
+<li><p>批注模式：实现多种颜色写字、批注擦除功能</p>
+</li>
+<li><p>视频控制模式：实现音量调节、视频前进后退功能</p>
+</li>
+</ol>
+<h2 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h2><ul>
+<li><p><input checked="" disabled="" type="checkbox">  手部位置及关节点的识别</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  人机交互功能的设计与实现</p>
+</li>
+<li><p><input checked="" disabled="" type="checkbox">  手势识别在树莓派上部署</p>
+</li>
+<li><p><input disabled="" type="checkbox">  系统整体结构的搭建</p>
+</li>
+<li><p><input disabled="" type="checkbox">  制作一个简单的手语库（如26个字母）</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/12/05/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -332,7 +420,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -402,7 +490,7 @@ $(document).ready(function() {
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共75字</span>
+  <span class="post-count">博客全站共1k字</span>
 </div>
         
 <div class="busuanzi-count">
